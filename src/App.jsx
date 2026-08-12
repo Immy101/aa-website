@@ -1,6 +1,7 @@
 
-import './App.css'
-import {motion} from "motion/react"
+import './App.css';
+import {motion} from "motion/react";
+import AnimatedButton from "./components/AnimatedButton";
 {/*importing the motion package for animating the required elements in my website */}
 function App() {
  
@@ -39,10 +40,11 @@ function App() {
       >
         Let's start
       </motion.button>
+      <AnimatedButton>What would you like today?</AnimatedButton>
     
     {/**creating a hover motion */}
     </>
-  )
+  );
 }
 
 export default App
