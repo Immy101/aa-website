@@ -4,23 +4,22 @@ const container = {
     hidden:{opacity: 0},
     visible:{opacity:1, transition:{staggerChildren: 1}},
 };
-export function collections(){
-    const collection = ["New In", "Fall", "Swimwear", "Accessories"];
+export function collectionslist(){
+    const collections = ["New In", "Fall", "Swimwear", "Accessories"];
 
     return (
-        <motion.ul
-        initial={{ x:-20}}
-        animate={{ x:0}}
-        transition={{duration:1}}
+        <motion.ul variants={container}
+        initial="hidden"
+        animate="visible"
         >
-            {collection.map(
-                (item)=>(
-                <motion.li key={item}
+            {collections.map(
+                (collection)=>(
+                <motion.li key={collection}
                 initial={{ opacity:0, x:10}}
                 animate={{opacity:1, x:0}}
                 transition={{duration:10}}
                 >
-                    {item}
+                    {collection}
                 </motion.li>
                 )
                 )}

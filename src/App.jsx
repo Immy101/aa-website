@@ -1,6 +1,7 @@
 
 import './App.css';
 import {motion} from "motion/react";
+import { collectionslist}  from './components/collectionslist';
 import AnimatedButton from "./components/AnimatedButton";
 {/*importing the motion package for animating the required elements in my website */}
 function App() {
@@ -41,7 +42,7 @@ function App() {
         Let's start
       </motion.button>
       <AnimatedButton>What would you like today?</AnimatedButton>
-      <collections/>
+      <collectionslist> </collectionslist>
     
       </motion.div>
       
